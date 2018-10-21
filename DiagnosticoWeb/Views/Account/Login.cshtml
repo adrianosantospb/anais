@@ -1,0 +1,40 @@
+﻿@model DiagnosticoWeb.Models.LoginModel
+
+@{
+    ViewBag.Title = "Autenticação";
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+@Styles.Render("~/Content/css/splash.css")
+
+<div class="container" style="padding-top: 40px; padding-bottom: 40px;">
+    <br /><br /><br /><br /><br /><br />
+    <h2 class="form-signin-heading text-center">Autenticação</h2>
+    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @id="loginForm", @class = "form-signin"})) {
+        @Html.ValidationSummary(true)
+        <fieldset>
+            @Html.AntiForgeryToken()
+        
+            <div class="form-group">
+                @Html.LabelFor(m => m.UserName, new { @for="inputUsername", @class="sr-only"})
+                @Html.TextBoxFor(m => m.UserName, new { @id="inputUsername", @class="form-control", @placeholder="Nome de usuário"})
+                <p class="help-block">@Html.ValidationMessageFor(m => m.UserName)</p>
+            </div>
+    
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password, new { @for="inputPassword", @class="sr-only"})
+                @Html.PasswordFor(m => m.Password, new { @id="inputPassword", @class="form-control", @placeholder="Senha"})
+                <p class="help-block">@Html.ValidationMessageFor(m => m.Password)</p>
+            </div>
+
+            <button type="submit" class="btn btn-primary center-block">
+                Log in <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+            </button>
+        </fieldset>
+    }
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/Scripts/BootstrapValidation.js")
+}

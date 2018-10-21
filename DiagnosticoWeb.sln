@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagnosticoWeb", "DiagnosticoWeb\DiagnosticoWeb.csproj", "{9A9BB93C-71E8-43AA-BE78-3426096FDF38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagnosticoWeb.EFDataAccess", "DiagnosticoWeb.EFDataAccess\DiagnosticoWeb.EFDataAccess.csproj", "{D4F3178E-697F-4441-A98A-6CE0C066FD55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagnosticoWeb.Model", "DiagnosticoWeb.Model\DiagnosticoWeb.Model.csproj", "{6649F173-041B-4F1A-B083-D7100DCBF536}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiagnosticoWeb.Services", "DiagnosticoWeb.Services\DiagnosticoWeb.Services.csproj", "{7ED3CD03-33BF-4409-A8BB-0872CBE5D3FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A931829-BD89-4C0B-9B18-380843F488F9}"
+	ProjectSection(SolutionItems) = preProject
+		lib\LightInfocon.GoldenAccess.General.dll = lib\LightInfocon.GoldenAccess.General.dll
+		lib\LightInfocon.GoldenTrack.Common.dll = lib\LightInfocon.GoldenTrack.Common.dll
+		lib\LightInfocon.GoldenTrack.General.dll = lib\LightInfocon.GoldenTrack.General.dll
+		lib\LightInfocon.GoldenTrack.Settings.dll = lib\LightInfocon.GoldenTrack.Settings.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{A23E4F14-E1B8-456E-9184-978E3A01DF84}"
+	ProjectSection(SolutionItems) = preProject
+		lib\LightInfocon.GoldenAccess.Engine.dll = lib\LightInfocon.GoldenAccess.Engine.dll
+		lib\LightInfocon.GoldenAccess.General.dll = lib\LightInfocon.GoldenAccess.General.dll
+		lib\LightInfocon.GoldenAccess.SqlServerDataAccess.dll = lib\LightInfocon.GoldenAccess.SqlServerDataAccess.dll
+		lib\LightInfocon.GoldenTrack.Common.dll = lib\LightInfocon.GoldenTrack.Common.dll
+		lib\LightInfocon.GoldenTrack.General.dll = lib\LightInfocon.GoldenTrack.General.dll
+		lib\LightInfocon.GoldenTrack.Settings.dll = lib\LightInfocon.GoldenTrack.Settings.dll
+		lib\PubMed.dll = lib\PubMed.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{046A15FB-FE20-451A-AB54-4E1B402DB453}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solr", "solr", "{E9B30D69-3807-41C7-B2F8-E44F50EB421A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "server", "server", "{BDC194F5-D1EA-4255-9BD6-B3957E2827AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solr", "solr", "{6C9F8F2E-5D35-417D-8E0A-1B151081C29E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "diagnostico_web", "diagnostico_web", "{1E14D240-1269-4FFE-8702-5D3AF7440A12}"
+	ProjectSection(SolutionItems) = preProject
+		resources\solr\server\solr\diagnostico_web\core.properties = resources\solr\server\solr\diagnostico_web\core.properties
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "conf", "conf", "{8761B140-A4C4-45FD-9A54-17FD02910E03}"
+	ProjectSection(SolutionItems) = preProject
+		resources\solr\server\solr\diagnostico_web\conf\_rest_managed.json = resources\solr\server\solr\diagnostico_web\conf\_rest_managed.json
+		resources\solr\server\solr\diagnostico_web\conf\currency.xml = resources\solr\server\solr\diagnostico_web\conf\currency.xml
+		resources\solr\server\solr\diagnostico_web\conf\protwords.txt = resources\solr\server\solr\diagnostico_web\conf\protwords.txt
+		resources\solr\server\solr\diagnostico_web\conf\schema.xml = resources\solr\server\solr\diagnostico_web\conf\schema.xml
+		resources\solr\server\solr\diagnostico_web\conf\solrconfig.xml = resources\solr\server\solr\diagnostico_web\conf\solrconfig.xml
+		resources\solr\server\solr\diagnostico_web\conf\stopwords.txt = resources\solr\server\solr\diagnostico_web\conf\stopwords.txt
+		resources\solr\server\solr\diagnostico_web\conf\synonyms.txt = resources\solr\server\solr\diagnostico_web\conf\synonyms.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{A7CA34C6-BD59-4C39-8E0C-BE946397BF8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lang", "lang", "{4B7435F6-69C6-47B7-B462-F316CBD74D73}"
+	ProjectSection(SolutionItems) = preProject
+		resources\solr\server\solr\diagnostico_web\conf\lang\stopwords_en.txt = resources\solr\server\solr\diagnostico_web\conf\lang\stopwords_en.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A9BB93C-71E8-43AA-BE78-3426096FDF38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9BB93C-71E8-43AA-BE78-3426096FDF38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9BB93C-71E8-43AA-BE78-3426096FDF38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9BB93C-71E8-43AA-BE78-3426096FDF38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4F3178E-697F-4441-A98A-6CE0C066FD55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4F3178E-697F-4441-A98A-6CE0C066FD55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4F3178E-697F-4441-A98A-6CE0C066FD55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4F3178E-697F-4441-A98A-6CE0C066FD55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6649F173-041B-4F1A-B083-D7100DCBF536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6649F173-041B-4F1A-B083-D7100DCBF536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6649F173-041B-4F1A-B083-D7100DCBF536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6649F173-041B-4F1A-B083-D7100DCBF536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7ED3CD03-33BF-4409-A8BB-0872CBE5D3FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED3CD03-33BF-4409-A8BB-0872CBE5D3FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED3CD03-33BF-4409-A8BB-0872CBE5D3FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED3CD03-33BF-4409-A8BB-0872CBE5D3FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9B30D69-3807-41C7-B2F8-E44F50EB421A} = {046A15FB-FE20-451A-AB54-4E1B402DB453}
+		{BDC194F5-D1EA-4255-9BD6-B3957E2827AB} = {E9B30D69-3807-41C7-B2F8-E44F50EB421A}
+		{6C9F8F2E-5D35-417D-8E0A-1B151081C29E} = {BDC194F5-D1EA-4255-9BD6-B3957E2827AB}
+		{1E14D240-1269-4FFE-8702-5D3AF7440A12} = {6C9F8F2E-5D35-417D-8E0A-1B151081C29E}
+		{8761B140-A4C4-45FD-9A54-17FD02910E03} = {1E14D240-1269-4FFE-8702-5D3AF7440A12}
+		{A7CA34C6-BD59-4C39-8E0C-BE946397BF8F} = {1E14D240-1269-4FFE-8702-5D3AF7440A12}
+		{4B7435F6-69C6-47B7-B462-F316CBD74D73} = {8761B140-A4C4-45FD-9A54-17FD02910E03}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,168 @@
+﻿/************************
+* Etapas do Diagnóstico *
+************************/
+
+ol.progtrckr {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ol.progtrckr li {
+    display: inline-block;
+    text-align: center;
+    line-height: 3em;
+}
+
+ol.progtrckr[data-progtrckr-steps="2"] li { width: 49%; }
+ol.progtrckr[data-progtrckr-steps="3"] li { width: 33%; }
+ol.progtrckr[data-progtrckr-steps="4"] li { width: 24%; }
+ol.progtrckr[data-progtrckr-steps="5"] li { width: 19%; }
+ol.progtrckr[data-progtrckr-steps="6"] li { width: 16%; }
+ol.progtrckr[data-progtrckr-steps="7"] li { width: 14%; }
+ol.progtrckr[data-progtrckr-steps="8"] li { width: 12%; }
+ol.progtrckr[data-progtrckr-steps="9"] li { width: 11%; }
+
+ol.progtrckr li.progtrckr-done {
+    color: black;
+    border-bottom: 4px solid yellowgreen;
+}
+ol.progtrckr li.progtrckr-todo {
+    color: silver; 
+    border-bottom: 4px solid silver;
+}
+
+ol.progtrckr li.progtrckr-active {
+    color: silver; 
+    border-bottom: 4px solid lightskyblue;
+}
+
+ol.progtrckr li:after {
+    content: "\00a0\00a0";
+}
+ol.progtrckr li:before {
+    position: relative;
+    bottom: -2.5em;
+    float: left;
+    left: 50%;
+    line-height: 1em;
+}
+ol.progtrckr li.progtrckr-done:before {
+    content: "\2713";
+    color: white;
+    background-color: yellowgreen;
+    height: 1.2em;
+    width: 1.2em;
+    line-height: 1.2em;
+    border: none;
+    border-radius: 1.2em;
+}
+ol.progtrckr li.progtrckr-todo:before {
+    content: "\039F";
+    color: silver;
+    background-color: white;
+    font-size: 1.5em;
+    bottom: -1.6em;
+}
+
+ol.progtrckr li.progtrckr-done:hover {
+    background-color: yellowgreen;
+}
+
+
+/* Criar Diagnóstico */
+.form-criar-diagnostico {
+  max-width: 350px;
+}
+
+#anamneseCardioForm {
+
+}
+
+#divParticipantes {
+    margin-top: 10px;
+}
+
+.cool-checkbox {
+    height: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    padding: 10px;
+}
+
+.cool-checkbox-immutable {
+    height: 50px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: white;
+    padding: 10px;
+    background-color: aquamarine;
+}
+
+.cool-checkbox:hover {
+    border-color: aquamarine;
+}
+
+.chkbxParticipante:disabled + input + .cool-checkbox {
+    color: lightgray;
+}
+
+.chkbxParticipante:disabled + input + .cool-checkbox:hover {
+    border-color: white;
+}
+
+.chkbxParticipante {
+    display: none;
+}
+
+.chkbxParticipante:checked + input + .cool-checkbox {
+    background-color: aquamarine;
+}
+
+/* Inteligência coletiva */
+
+.mensagem {
+    border: 2px #d9edf7 solid;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.mensagem > span {
+    display: block;
+}
+
+
+.avaliacao {
+    margin-top: 5px;
+    padding: 15px;
+    border: 1px #c4f3c8 solid;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.spanRodadaConcluida {
+    color: green;
+}
+
+#inputNovaMensagem {
+    width: 100%;
+}
+
+.titulo-coluna-inteligencia-coletiva {
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+
+/* Procedimentos realizados */
+
+.acompanhamento {
+    margin-top: 5px;
+    padding: 15px;
+    border: 1px #c4f3c8 solid;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
